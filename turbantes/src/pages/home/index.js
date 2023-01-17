@@ -6,7 +6,10 @@ function Home(){
         <div className="container">
             <Header />
             <main>
-                <p>Conteúdo principal da página.</p>
+                <h3>Maria turbantes apresenta produtos que não vão sair da sua cabeça!</h3>
+                <p>
+                    Lorem ipsum koakkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkksaaaaaaaaaaaaaaaaaaokmcoajwnwuiuoc iwouaiwiniwiziaowmiizajiofjfyoihfaiojiejiraeijejiojfeimeoejfeijfiejikjfowennwoiwoiwneioeknlakkakakkajofieekekpfekpmqwpqqqqqqqqqqqqpqqqqqqqqqqqqqpppppppppppppjokmkloksaoknkkkkkkkkkkksijfklçialnaijlnkhwima lçakklsmssskkl ekeelçalalala
+                </p>
             </main>
             <Footer />
         </div>

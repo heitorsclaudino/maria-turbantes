@@ -4,5 +4,11 @@
 }
 
 nav {
+    display: flex;
     justify-content: space-between;
+}
+
+img {
+    height: 56px;
+    width: 84px;
 }
