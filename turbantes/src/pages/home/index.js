@@ -10,6 +10,7 @@ function Home(){
                 <p>
                     Lorem ipsum koakkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkksaaaaaaaaaaaaaaaaaaokmcoajwnwuiuoc iwouaiwiniwiziaowmiizajiofjfyoihfaiojiejiraeijejiojfeimeoejfeijfiejikjfowennwoiwoiwneioeknlakkakakkajofieekekpfekpmqwpqqqqqqqqqqqqpqqqqqqqqqqqqqpppppppppppppjokmkloksaoknkkkkkkkkkkksijfklçialnaijlnkhwima lçakklsmssskkl ekeelçalalala
                 </p>
+                //slider
             </main>
             <Footer />
         </div>
