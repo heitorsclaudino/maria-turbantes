@@ -12,8 +12,9 @@ export default function Card(props){
     return (
         <div className="card-container">
             <div className="foto">
-                <p>{cardData.foto}</p>
+                <img className="product-img" src="https://images.pexels.com/photos/2952204/pexels-photo-2952204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></img>
             </div>
+
             <div className="detalhes">
                 <span>Nome: </span> <p>{cardData.nome}</p>
                 <span>Descrição: </span> <p>{cardData.desc}</p>
