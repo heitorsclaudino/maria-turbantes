@@ -2,15 +2,18 @@ import { useContext } from "react";
 
 import Header from "../../components/header";
 import Card from "../../components/productsCard";
-import ProdutosContext from "../../contexts/produtos";
+import { ProdutosContext } from "../../App";
+import Footer from "../../components/footer";
 
 function Produtos(){
-    const { produtos } = useContext(ProdutosContext);
-    console.log(produtos) 
+    const { products } = useContext(ProdutosContext);
+    const produtos = products[0]; 
+
     return (
         <div className="container">
             <Header />
-            <Card name="Turbante amarelo" foto="xxx" desc="Bla bla bla" valor="25,00"/>
+                <Card />
+            <Footer />
         </div>
     );
 }

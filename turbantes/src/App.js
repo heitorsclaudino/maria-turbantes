@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createContext } from 'react';
 
 import Home from "./pages/home";
 import Produtos from './pages/nossosProdutos';
 import QuemSomos from './pages/quemSomos';
-import ProdutosContext from './contexts/produtos';
 
+export const ProdutosContext = createContext();
 
 function App() {
+  const products = useState([
+    {
+      name: 'Turbante amarelo',
+      desc: 'desc',
+      foto: 'foto',
+      valor: '25,00'
+    },
+    {
+      name: 'Turbante vermelho',
+      desc: 'desc',
+      foto: 'foto',
+      valor: '25,00'
+    }
+  ]);
+  
   return (
-    <ProdutosContext.Provider value={{ produtos : ['Turbante amarelo', 'Turbante vermelho'] }}>
+    <ProdutosContext.Provider value={ {products} }>
       <BrowserRouter>
         <Routes>
           <Route path='/' index element={ <Home /> } />
