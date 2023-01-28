@@ -12,6 +12,7 @@ function Header(){
                 <li className="nav-item"><Link to="/">Home</Link></li>
                 <li className="nav-item"><Link to="/produtos">Nossos produtos</Link></li>
                 <li className="nav-item"><Link to="/quem-somos">Quem Somos</Link></li>
+                <li className="nav-item"><Link to="/contato">Contato</Link></li>
             </ul>
         </nav>
     );

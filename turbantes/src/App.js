@@ -5,6 +5,7 @@ import { createContext } from 'react';
 import Home from "./pages/home";
 import Produtos from './pages/nossosProdutos';
 import QuemSomos from './pages/quemSomos';
+import Contato from './pages/contato';
 
 export const ProdutosContext = createContext();
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/' index element={ <Home /> } />
           <Route path='produtos' element={ <Produtos /> } />
           <Route path='quem-somos' element={ <QuemSomos /> } />
+          <Route path='contato' element={ <Contato /> } />
         </Routes>
       </BrowserRouter>
     </ProdutosContext.Provider>
