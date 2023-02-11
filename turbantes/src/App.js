@@ -10,9 +10,8 @@ import Contato from './pages/contato';
 export const ProdutosContext = createContext();
 
 function App() {
-  const products = useState({
-    turbantes : [
-      {
+  const [turbantes, setTurbantes] = useState( 
+      [{
         name: 'Turbante amarelo',
         desc: 'desc',
         foto: 'foto',
@@ -23,26 +22,28 @@ function App() {
         desc: 'desc',
         foto: 'foto',
         valor: '25'
-      }
-    ],
-    faixas : [
-      {
-        name: 'Faixinha preta',
-        desc: 'desc',
-        foto: 'foto',
-        valor: '25'
-      },
-    ],
-    pochetes : [
-      {
-        name: 'Pochete Jeans',
-        desc: 'desc',
-        foto: 'foto',
-        valor: '40'
-      },
-    ],
-  });
+      }]);
+
+  const [pochetes, setPochetes] = useState([
+    {
+      name : 'Pochete vinho',
+      desc : 'Pochete de cintura',
+      foto : 'foto',
+      valor : '45'
+    },
+  ]);
+
+  const [faixas, setFaixas] = useState([
+    {
+      name : 'Faixa aramada preta e branca',
+      desc : 'descrição do produto',
+      foto : 'foto',
+      valor : '30'
+    },
+  ]);
   
+  const [products, setProducts] = useState([ turbantes, pochetes, faixas]);
+
   return (
     <ProdutosContext.Provider value={ {products} }>
       <BrowserRouter>

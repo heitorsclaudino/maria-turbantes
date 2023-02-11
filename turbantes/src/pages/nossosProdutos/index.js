@@ -7,19 +7,20 @@ import Footer from "../../components/footer";
 
 function Produtos(){
     const { products } = useContext(ProdutosContext);
-    //const produtos = products[0]; 
+    const turbantes = products[0];
+    const pochetes = products[1];
+    const faixas = products[2];
 
     return (
         <div className="container">
             <Header />
             <h3> Turbantes </h3>
-                <Card turbantes={true}/>
-
+            { turbantes.lenght !== 0 ? <Card produto={turbantes}/> : <p> Não há turbantes disponíveis no momento. </p> }
+                
             <h3> Faixas </h3>
-                <Card faixas={true}/>
-
+                { faixas.lenght !== 0 ? <Card produto={faixas} /> : <p> Não há faixas disponíveis no momento.</p> }
             <h3> Pochetes </h3>
-                <Card pochetes={true}/>
+                { pochetes.lenght !== 0 ? <Card produto={pochetes} /> : <p> Não há pochetes disponíveis no momento. </p>}
             <Footer />
         </div>
     );
