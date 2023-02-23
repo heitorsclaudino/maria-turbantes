@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createContext } from 'react';
 
-import Home from "./pages/home";
-import Produtos from './pages/nossosProdutos';
-import QuemSomos from './pages/quemSomos';
-import Contato from './pages/contato';
+import Rotas from './routes';
 
 export const ProdutosContext = createContext();
 
@@ -46,14 +42,7 @@ function App() {
 
   return (
     <ProdutosContext.Provider value={ {products} }>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' index element={ <Home /> } />
-          <Route path='produtos' element={ <Produtos /> } />
-          <Route path='quem-somos' element={ <QuemSomos /> } />
-          <Route path='contato' element={ <Contato /> } />
-        </Routes>
-      </BrowserRouter>
+      <Rotas />
     </ProdutosContext.Provider>
   );
 }

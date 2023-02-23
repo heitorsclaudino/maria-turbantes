@@ -15,12 +15,12 @@ function Produtos(){
         <div className="container">
             <Header />
             <h3> Turbantes </h3>
-            { turbantes.lenght !== 0 ? <Card produto={turbantes}/> : <p> Não há turbantes disponíveis no momento. </p> }
+            { turbantes.lenght !== 0 ? <Card produto="turbante"/> : <p> Não há turbantes disponíveis no momento. </p> }
                 
             <h3> Faixas </h3>
-                { faixas.lenght !== 0 ? <Card produto={faixas} /> : <p> Não há faixas disponíveis no momento.</p> }
+                { faixas.lenght !== 0 ? <Card produto="faixa" /> : <p> Não há faixas disponíveis no momento.</p> }
             <h3> Pochetes </h3>
-                { pochetes.lenght !== 0 ? <Card produto={pochetes} /> : <p> Não há pochetes disponíveis no momento. </p>}
+                { pochetes.lenght !== 0 ? <Card produto="pochete" /> : <p> Não há pochetes disponíveis no momento. </p>}
             <Footer />
         </div>
     );

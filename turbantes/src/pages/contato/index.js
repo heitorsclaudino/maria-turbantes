@@ -1,9 +1,18 @@
 import React from 'react';
 
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+
 export default function Contato() {
     return(
         <div>
-            <h1> Ola mundo </h1>
+            <Header />
+            <h3>Ficou interessada por algum produto? Entre em contato conosco!</h3>
+            <button><a href="https://www.instagram.com/maria.turbantes/">Instagram</a></button>
+            <button>
+                <a href="https://api.whatsapp.com/send?phone=5511962251597">WhatsApp</a>
+            </button>
+            <Footer />
         </div>
     )
 }
