@@ -1,19 +1,17 @@
 import React from "react";
 import { useContext, useState } from "react";
-import { ProdutosContext } from "../../App";
 import "./style.css"
 
+import { ProdutosContext } from "../../contexts/productsContext";
+
 export default function Card(props) {
-    const { products } = useContext(ProdutosContext);
-    console.log(products);
-    const turbantes = products[0];
-    const pochetes = products[1];
-    const faixas = products[2];
+    const { produtos } = useContext(ProdutosContext);
+    
 
     if(props.produto === "turbante"){
         return(
             <div className="cards-box">
-                {turbantes.map((item, i) => {
+                {produtos[0].turbantes.map((item, i) => {
                     return(
                         <div className="card-container" key={i}>
                             <img src="https://images.pexels.com/photos/2170387/pexels-photo-2170387.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Turbante vinho" className="product-img"></img>
@@ -31,7 +29,7 @@ export default function Card(props) {
     if(props.produto === "faixa"){
         return(
             <div className="cards-box">
-                {faixas.map((item, i) => {
+                {produtos[0].faixas.map((item, i) => {
                     return(
                         <div className="card-container" key={i}>
                             <img src="https://images.pexels.com/photos/2170387/pexels-photo-2170387.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Turbante vinho" className="product-img"></img>
@@ -49,7 +47,7 @@ export default function Card(props) {
     if(props.produto === "pochete"){
         return(
             <div className="cards-box">
-                {pochetes.map((item, i) => {
+                {produtos[0].pochetes.map((item, i) => {
                     return(
                         <div className="card-container" key={i}>
                             <img src="https://images.pexels.com/photos/2170387/pexels-photo-2170387.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Turbante vinho" className="product-img"></img>

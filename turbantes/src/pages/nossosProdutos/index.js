@@ -2,25 +2,25 @@ import { useContext } from "react";
 
 import Header from "../../components/header";
 import Card from "../../components/productsCard";
-import { ProdutosContext } from "../../App";
 import Footer from "../../components/footer";
 
+import { ProdutosContext } from "../../contexts/productsContext";
+
 function Produtos(){
-    const { products } = useContext(ProdutosContext);
-    const turbantes = products[0];
-    const pochetes = products[1];
-    const faixas = products[2];
+    const { produtos } = useContext(ProdutosContext);
+    
+    
 
     return (
         <div className="container">
             <Header />
             <h3> Turbantes </h3>
-            { turbantes.lenght !== 0 ? <Card produto="turbante"/> : <p> Não há turbantes disponíveis no momento. </p> }
+            { produtos[0].turbantes !== 0 ? <Card produto="turbante"/> : <p> Não há turbantes disponíveis no momento. </p> }
                 
             <h3> Faixas </h3>
-                { faixas.lenght !== 0 ? <Card produto="faixa" /> : <p> Não há faixas disponíveis no momento.</p> }
+                { produtos[0].faixas !== 0 ? <Card produto="faixa" /> : <p> Não há faixas disponíveis no momento.</p> }
             <h3> Pochetes </h3>
-                { pochetes.lenght !== 0 ? <Card produto="pochete" /> : <p> Não há pochetes disponíveis no momento. </p>}
+                { produtos[0].pochetes !== 0 ? <Card produto="pochete" /> : <p> Não há pochetes disponíveis no momento. </p>}
             <Footer />
         </div>
     );
