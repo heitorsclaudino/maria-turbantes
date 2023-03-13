@@ -1,0 +1,29 @@
+.btnProdutos{
+    width: 110px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.textBtn {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.central{
+
+}
+
+.img-container{
+}
+
+.img{
+    height: 300px;
+}
+
+.principal{
+    margin: 0 20vw
+}
+
+.texto-central{
+    margin: 15px 0px;
+}
