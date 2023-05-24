@@ -3,7 +3,7 @@ import "../style.css";
 
 function Header(){
     return (
-        <nav className="bg-red-700">
+        <nav className="bg-red-800">
             <div className="marca">
                 <img src="https://images.pexels.com/photos/5901052/pexels-photo-5901052.jpe?auto=compress&cs=tinysrgb&w=600" alt="mulher bonita" className=""></img>
                 <h1 className="logo">Maria Turbantes</h1>
