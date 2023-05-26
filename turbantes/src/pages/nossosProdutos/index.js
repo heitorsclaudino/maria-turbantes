@@ -14,13 +14,33 @@ function Produtos(){
     return (
         <div className="container">
             <Header />
-                <h3> Turbantes </h3>
-                { produtos[0].turbantes !== 0 ? <Card produto="turbante"/> : <p> Não há turbantes disponíveis no momento. </p> }
+               <div className="flex-col grid grid-cols-4 gap-4 px-20">
+
+                <div className="col-span-4 flex justify-center m-10">
+                    <h3 className="text-gray-800 font-bold text-xl"> Turbantes </h3>
+                </div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+                    <div className="bg-blue-900 w-full h-80"></div>
                     
-                <h3> Faixas </h3>
-                    { produtos[0].faixas !== 0 ? <Card produto="faixa" /> : <p> Não há faixas disponíveis no momento.</p> }
-                <h3> Pochetes </h3>
-                    { produtos[0].pochetes !== 0 ? <Card produto="pochete" /> : <p> Não há pochetes disponíveis no momento. </p>}
+                <div className="col-span-4 flex justify-center m-10">
+                    <h3 className="text-gray-800 font-bold text-xl"> Faixas </h3>    
+                </div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+
+
+                <div className="col-span-4 flex justify-center m-10">
+                    <h3 className="text-gray-800 font-bold text-xl"> Pochetes </h3>    
+                </div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+                    <div className="bg-blue-900 w-full h-80"></div>
+               </div>
             <Footer />
         </div>
     );
