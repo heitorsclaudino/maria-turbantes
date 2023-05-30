@@ -20,7 +20,7 @@ export default function Contato() {
                 </button> */}
 
                 <p>Quer fechar uma parceria ou contato profissional? Envie-nos um <a href='https://www.google.com'>e-mail</a></p>
-            <Footer />
+            <Footer extend={false}/>
         </div>
     )
 }
