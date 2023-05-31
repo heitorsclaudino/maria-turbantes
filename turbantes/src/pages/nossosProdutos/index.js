@@ -41,7 +41,9 @@ function Produtos(){
                     <div className="bg-white w-full h-80"></div>
                     <div className="bg-white w-full h-80"></div>
                </div>
-            <Footer extend={true}/>
+            <div className="mt-10 bg-stone-400">
+                <Footer/>
+            </div>
         </div>
     );
 }

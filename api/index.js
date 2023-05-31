@@ -10,12 +10,12 @@ app.use(bodyPaser.json());
 
 app.use(bodyPaser.urlencoded({
     extended : true,
-}))
+}));
 
 //Conexão com o banco de dados
 const mysql = require('mysql');
 
-const database = mysql.createPool({
+    const database = mysql.createPool({
     database : "maria_turbantes",
     host : "localhost",
     user : 'root',
@@ -23,12 +23,22 @@ const database = mysql.createPool({
 });
 
 
+//Rotas da API
+app.get('/', (req, res) => {
+    const getAllProducts = 'SELECT * FROM produtos'
+    
+    database.query(getAllProducts, (err, result) => {
+        if (err) console.log('Ocorreu um erro na query SQL' + err);
+
+        res.json(result);
+    })
+});
+
+app.get('/seila', (req, res) => {
+    res.send('Hello world!')
+});
+
 //Primeira ação do servidor
 app.listen(8080, () => {
     console.log('Server running on port: 8080');
-});
-
-//Rotas da API
-app.get('/', (req, res) => {
-    res.send({message : "Hello world!"});
 });
