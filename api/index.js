@@ -1,44 +1,24 @@
 const express = require('express');
-const cors = require('cors');
-const bodyPaser = require('body-parser');
+
+const { db } = require('./dataBase');
+
+//Porta do Servidor
+const PORT = 8080;
 
 const app = express();
 
-//Prevenção de erros
-app.use(cors);
-app.use(bodyPaser.json());
+//Requisições ao Banco de Dados
+const getAllProducts = async () => {
+    const response = await db.query("SELECT * FROM produtos");
+    console.log(response);
+};
 
-app.use(bodyPaser.urlencoded({
-    extended : true,
-}));
-
-//Conexão com o banco de dados
-const mysql = require('mysql');
-
-    const database = mysql.createPool({
-    database : "maria_turbantes",
-    host : "localhost",
-    user : 'root',
-    password : "",
-});
-
-
-//Rotas da API
 app.get('/', (req, res) => {
-    const getAllProducts = 'SELECT * FROM produtos'
-    
-    database.query(getAllProducts, (err, result) => {
-        if (err) console.log('Ocorreu um erro na query SQL' + err);
-
-        res.json(result);
-    })
+    res.send('Hello World!');
+    getAllProducts().then(resp => console.log(resp)).catch((e) => console.log('Ocorreu um erro ao tentar pegar os produtos: ' + e));
 });
 
-app.get('/seila', (req, res) => {
-    res.send('Hello world!')
-});
 
-//Primeira ação do servidor
-app.listen(8080, () => {
-    console.log('Server running on port: 8080');
+app.listen(PORT, () => {
+    console.log(`Servidor iniciado na porta ${PORT}.`);
 });
