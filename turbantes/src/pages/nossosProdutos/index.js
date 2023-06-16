@@ -1,15 +1,21 @@
-import { useContext } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 import Header from "../../components/header";
-import Card from "../../components/productsCard";
 import Footer from "../../components/footer";
 
-import { ProdutosContext } from "../../contexts/productsContext";
-
 function Produtos(){
-    const { produtos } = useContext(ProdutosContext);
+    const [turbantes, setTurbantes] = useState('');
+    const [faixas, setFaixas] = useState('');
+    const [pochetes, setPochetes] = useState('');
+
+    useEffect(() => {
+        const getAllProducts = async () => {
+           
+        }
+        getAllProducts();
     
-    
+    }, []);
 
     return (
         <div className="container">
