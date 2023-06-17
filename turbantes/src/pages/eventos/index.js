@@ -3,7 +3,7 @@ import Footer from "../../components/footer";
 
 export default function Eventos () {
     return (
-        <div className="bg-stone-400 w-screen">
+        <div className="bg-stone-100 w-screen">
             <Header />
             <div className="grid grid-cols-12 grid-rows-2 gap-4 w-screen mt-16">
                 <div className="bg-blue-800 col-span-3 h-56 col-start-3 rounded-lg p-3">

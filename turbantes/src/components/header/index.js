@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "../style.css";
 
 function Header(){
     return (
@@ -9,11 +8,12 @@ function Header(){
                 <h1 className="ml-3 text-gray-100 font-semibold text-lg">Maria Turbantes</h1>
             </div>
             <ul className="flex flex-row no-underline text-gray-100">
-                <li className="nav-item"><Link className="mr-3" to="/">Home</Link></li>
-                <li className="nav-item"><Link className="mr-3" to="/produtos">Nossos produtos</Link></li>
-                <li className="nav-item"><Link className="mr-3" to="/quem-somos">Quem Somos</Link></li>
-                <li className="nav-item"><Link className="mr-3" to="/eventos">Eventos</Link></li>
-                <li className="nav-item"><Link className="mr-3" to="/contato">Contato</Link></li>
+                <li><Link className="mr-3" to="/">Home</Link></li>
+                <li><Link className="mr-3" to="/produtos">Nossos produtos</Link></li>
+                <li><Link className="mr-3" to="/quem-somos">Quem Somos</Link></li>
+                <li><Link className="mr-3" to="/eventos">Eventos</Link></li>
+                <li><Link className="mr-3" to="/contato">Contato</Link></li>
+                <li><Link className="mr-3" to="/administradores">Administração</Link></li>
             </ul>
         </nav>
     );

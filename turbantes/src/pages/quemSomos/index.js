@@ -3,7 +3,7 @@ import Footer from "../../components/footer";
 
 function QuemSomos(){
     return (
-        <div className="w-screen h-screen bg-stone-400 flex flex-col">
+        <div className="w-screen h-screen bg-stone-100 flex flex-col">
             <Header />
             <div className="grid grid-cols-12 w-screen h-auto">
                 
