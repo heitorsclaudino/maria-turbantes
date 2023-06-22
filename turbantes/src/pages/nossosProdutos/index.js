@@ -21,7 +21,7 @@ function Produtos(){
     return (
         <div className="container">
             <Header />
-               <div className="flex-col grid grid-cols-4 gap-4 px-20 mb-6 items-center w-screen bg-stone-100">
+               <div className="flex-col grid grid-cols-4 gap-4 px-20 mb-6 items-center w-screen bg-violet-200">
 
                 <div className="col-span-4 flex justify-center m-10">
                     <h3 className="text-gray-800 font-bold text-xl"> Turbantes </h3>
@@ -48,7 +48,7 @@ function Produtos(){
                     <div className="bg-stone-600 w-full h-80"></div>
                     <div className="bg-stone-600 w-full h-80"></div>
                </div>
-            <div className="mt-10 bg-stone-400">
+            <div className="mt-10 bg-violet-200">
                 <Footer/>
             </div>
         </div>

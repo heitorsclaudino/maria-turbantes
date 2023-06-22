@@ -29,14 +29,12 @@ export default function Contato() {
                             Apontamentos e sugestões também são muito bem-vindos. Envie o seu feedback!
                         </p>
                         
-                        <textarea className="w-full h-64" value={feedback} onChange={(event) => {
+                        <textarea placeholder="Deixe seu feedback aqui, isso ajuda a melhorar a sua experiência com o site!" className="w-full h-64 resize-none p-4" value={feedback} onChange={(event) => {
                             setFeedback(event.target.value);
                         }}
-                        >
+                        ></textarea>
 
-                        </textarea>
-
-                        <button onClick={() => console.log(feedback)}>Click here</button>
+                        <button className="mt-6 rounded-xl bg-stone-800 font-semibold text-xl text-stone-300 w-40 h-16" onClick={() => console.log(feedback)}>Enviar</button>
                     </div>
                 </div>
 

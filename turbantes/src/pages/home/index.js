@@ -2,19 +2,21 @@ import { Link } from "react-router-dom";
 
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import Slider from "../../components/slider";
 
 function Home(){
     
     return (
         <div className="container flex flex-col">
             <Header />
+            <Slider />
                 <main className="">
-                    <div className="flex flex-col w-screen h-screen bg-stone-400 items-center">
+                    <div className="flex flex-col w-screen h-screen bg-violet-200 items-center">
 
-                            <h3 className="text-black text-xl font-semibold mt-10">Maria turbantes apresenta produtos que não vão sair da sua cabeça!</h3>
+                            <h3 className="text-black text-2xl font-bold mt-10">Maria turbantes apresenta produtos que não vão sair da sua cabeça!</h3>
 
                             <div className="mt-10 w-screen justify-center">
-                                <p className="flex flex-col text-xl text-white items-center"> A loja de produtos Maria Turbantes tem o prazer de apresentar o novo site. <br/> Aqui você vai poder ver todas as nossas peças e poder entrar em contato para reservar seu pedido</p>    
+                                <p className="flex flex-col text-xl text-xl items-center"> A loja de produtos Maria Turbantes tem o prazer de apresentar o novo site. <br/> Aqui você vai poder ver todas as nossas peças e poder entrar em contato para reservar seu pedido</p>    
                             </div>
 
                                 <div className="flex flex-col items-end">
