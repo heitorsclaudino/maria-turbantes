@@ -11,17 +11,17 @@ function Produtos(){
 
     useEffect(() => {
         const getAllProducts = async () => {
-           const resposta = await axios.get('http://localhost:8080');
-           console.log(resposta);
+           const resposta = await axios.get('http://localhost:8080')
+        //    console.log(resposta);
         }
         getAllProducts();
     
     }, []);
 
     return (
-        <div className="container">
+        <div className="w-screen h-full bg-violet-200">
             <Header />
-               <div className="flex-col grid grid-cols-4 gap-4 px-20 mb-6 items-center w-screen bg-violet-200">
+               <div className="flex-col grid grid-cols-4 gap-4 px-20 mb-6 items-center h-full mb-8">
 
                 <div className="col-span-4 flex justify-center m-10">
                     <h3 className="text-gray-800 font-bold text-xl"> Turbantes </h3>
@@ -48,9 +48,8 @@ function Produtos(){
                     <div className="bg-stone-600 w-full h-80"></div>
                     <div className="bg-stone-600 w-full h-80"></div>
                </div>
-            <div className="mt-10 bg-violet-200">
+                
                 <Footer/>
-            </div>
         </div>
     );
 }

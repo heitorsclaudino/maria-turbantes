@@ -5,10 +5,10 @@ import Footer from "../../components/footer";
 
 export default function Administradores() {
     return(
-        <div className="flex flex-col items-center h-screen bg-violet-200">
+        <div className="flex flex-col items-center h-full bg-violet-200">
             <Header />
             
-            <div className="flex flex-row w-4/6 h-96 mb-20">
+            <div className="flex flex-row w-4/6 h-96 mb-36">
                 <div className="w-3/6 flex flex-col items-center h-full rounded-lg mt-14 bg-stone-100 border-solid border-2 border-stone-900 mr-1">
                     <p className="font-semibold text-2xl font-mono mt-3">
                         Produtos

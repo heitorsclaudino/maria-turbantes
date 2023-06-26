@@ -34,7 +34,7 @@ export default function Contato() {
                         }}
                         ></textarea>
 
-                        <button className="mt-6 rounded-xl bg-stone-800 font-semibold text-xl text-stone-300 w-40 h-16" onClick={() => console.log(feedback)}>Enviar</button>
+                        <button className="mt-6 rounded-xl bg-stone-800 font-semibold text-xl text-stone-300 w-32 h-12" onClick={() => console.log(feedback)}>Enviar</button>
                     </div>
                 </div>
 

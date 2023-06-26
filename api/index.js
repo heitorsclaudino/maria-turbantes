@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const db = require('./connection');
 
 //Porta do Servidor
@@ -8,6 +9,8 @@ const app = express();
 
 app.use(express.json());
 
+app.use(cors);
+
 //Requisições ao Banco de Dados
 const getAllProducts = async () => {
     const [query] = await db.execute("SELECT * FROM produtos");
@@ -15,7 +18,9 @@ const getAllProducts = async () => {
 };
 
 app.get('/', (req, res) => {
-    getAllProducts();
+    res.send("Hello World!");
+    console.log(getAllProducts())
+    
 });
 
 

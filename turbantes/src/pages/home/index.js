@@ -7,16 +7,20 @@ import Slider from "../../components/slider";
 function Home(){
     
     return (
-        <div className="container flex flex-col">
+        <div className="w-screen flex flex-col h-full bg-violet-200">
             <Header />
-            <Slider />
-                <main className="">
-                    <div className="flex flex-col w-screen h-screen bg-violet-200 items-center">
+                <main className="mb-20">
+                    <div className="flex flex-col items-center">
 
                             <h3 className="text-black text-2xl font-bold mt-10">Maria turbantes apresenta produtos que não vão sair da sua cabeça!</h3>
 
-                            <div className="mt-10 w-screen justify-center">
-                                <p className="flex flex-col text-xl text-xl items-center"> A loja de produtos Maria Turbantes tem o prazer de apresentar o novo site. <br/> Aqui você vai poder ver todas as nossas peças e poder entrar em contato para reservar seu pedido</p>    
+                            <div className="mt-10 w-screen flex flex-col items-center">
+                                <p className=" text-2xl w-3/5">
+                                    <div className="font-semibold">
+                                        O site da loja de produtos Maria Turbantes está de volta e vem com tuuuudo!
+                                    </div>
+                                    Navegue pelo site e sinta-se a vontade para olhar produtos, entrar em contato e/ou mandar um feedback! Por enquanto, nosso sistema ainda <strong>não</strong> tem suporte a pagamentos com cartões e envio pelos correios, mas isso pode ser tratado entrando em contato diretamente no nosso <i>WhatsApp</i> exibido na <Link className="text-violet-600 font-semibold" to="/contato"> página de contato</Link>. 
+                                </p>    
                             </div>
 
                                 <div className="flex flex-col items-end">
@@ -28,7 +32,7 @@ function Home(){
                                 </div>
                     </div>
                 </main>
-            <Footer extend={false}/>
+            <Footer />
         </div>
     );
 }
