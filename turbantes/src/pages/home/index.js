@@ -7,7 +7,7 @@ import Slider from "../../components/slider";
 function Home(){
     
     return (
-        <div className="w-screen flex flex-col h-full bg-violet-200">
+        <div className="w-full flex flex-col h-full bg-violet-200">
             <Header />
                 <main className="mb-20">
                     <div className="flex flex-col items-center">
